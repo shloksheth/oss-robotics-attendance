@@ -87,7 +87,12 @@ h1 {
   padding: 0 4px;
 }
 
-/* Dropdown label (fixed overlap issue) */
+/* Dropdown container (fixes overlap) */
+.dropdown-group {
+  margin-top: 22px;
+}
+
+/* Dropdown label */
 .dropdown-label {
   display: block;
   margin-bottom: 6px;
@@ -96,7 +101,7 @@ h1 {
 }
 
 /* Dropdown field */
-select {
+.dropdown-group select {
   width: 100%;
   padding: 12px;
   border-radius: 6px;
@@ -104,10 +109,9 @@ select {
   font-size: 15px;
   background: white;
   outline: none;
-  margin-top: 0;
 }
 
-select:focus {
+.dropdown-group select:focus {
   border-color: #0078ff;
 }
 
@@ -197,7 +201,7 @@ input:checked + .slider:before {
   }
 
   .input-group input,
-  select {
+  .dropdown-group select {
     font-size: 14px;
     padding: 10px;
   }
