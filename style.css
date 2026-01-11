@@ -87,21 +87,24 @@ h1 {
   padding: 0 4px;
 }
 
-/* Dropdown styling */
+/* Dropdown label (fixed overlap issue) */
 .dropdown-label {
+  display: block;
+  margin-bottom: 6px;
   font-size: 14px;
   color: #555;
 }
 
+/* Dropdown field */
 select {
   width: 100%;
   padding: 12px;
-  margin-top: 6px;
   border-radius: 6px;
   border: 1px solid #aaa;
   font-size: 15px;
   background: white;
   outline: none;
+  margin-top: 0;
 }
 
 select:focus {
