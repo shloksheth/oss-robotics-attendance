@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>One-Time Setup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="background"></div>
+
+  <div class="card" id="setup-card">
+    <h1>One-Time Setup</h1>
+    <p class="subtitle">Tell us who you are so we can automate your check-ins.</p>
+
+    <form id="setup-form">
+
+      <div class="input-group">
+        <input type="text" id="name" required>
+        <label>Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="text" id="studentId" required>
+        <label>Student ID</label>
+      </div>
+
+      <div class="input-group">
+        <input type="text" id="grade" required>
+        <label>Grade</label>
+      </div>
+
+      <div class="input-group">
+        <label class="dropdown-label">FTC Team</label>
+        <select id="ftcTeam" required>
+          <option value="">Select your team</option>
+          <option>ABI</option>
+          <option>Cattlebots</option>
+          <option>Fractal Fusion</option>
+          <option>Loose Screws</option>
+          <option>Short Circuit</option>
+          <option>Rubber Bandits</option>
+          <option>N.U.T.S.</option>
+        </select>
+      </div>
+
+      <div class="toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="clockwork">
+          <span class="slider"></span>
+        </label>
+        <span class="toggle-label">I am in Clockwork</span>
+      </div>
+
+      <button type="submit" class="submit-btn">Save & Continue</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
